@@ -7,6 +7,10 @@ LABEL helyirendszer
 MENU LABEL ^Helyi rendszer
 LOCALBOOT 0
 
+LABEL hdt
+MENU LABEL Hard^ware Detection Tool
+KERNEL hdt.c32
+
 LABEL restart
 MENU LABEL ^Restart
 KERNEL reboot.c32
@@ -14,7 +18,3 @@ KERNEL reboot.c32
 LABEL kikapcs
 MENU LABEL ^Kikapcsolas
 KERNEL poweroff.c32
-
-LABEL hdt
-MENU LABEL Hard^ware Detection Tool
-KERNEL hdt.c32
