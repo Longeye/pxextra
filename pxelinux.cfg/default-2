@@ -1,0 +1,36 @@
+DEFAULT menu.c32
+PROMPT 0
+
+MENU TITLE **** BIOS-os PXE menu ****
+
+LABEL helyirendszer
+MENU LABEL ^Helyi rendszer
+LOCALBOOT 0
+
+LABEL hdt
+MENU LABEL Hard^ware Detection Tool
+KERNEL hdt.c32
+
+MENU BEGIN fokapcsolo
+
+MENU TITLE >>> Fokapcsolo almenu
+
+MENU LABEL Fokapcsolo
+
+LABEL restart
+MENU LABEL ^Restart
+KERNEL reboot.c32
+
+LABEL kikapcs
+MENU LABEL ^Kikapcsolas
+KERNEL poweroff.c32
+
+LABEL kilep
+MENU LABEL Kilepes
+MENU QUIT
+
+LABEL vissza
+MENU LABEL ^Vissza a Fomenube
+MENU EXIT
+
+MENU END
